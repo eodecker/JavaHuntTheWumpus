@@ -1,0 +1,9 @@
+To execute:
+Run HuntTheWumpus.java to play the game.
+javac HuntTheWumpus.java
+java HuntTheWumpus
+
+Instructions for the game:
+wasd for movement. If the room is red, it means you are close to the Wumpus. Use SPACE to arm yourself (one shot only) before entering the room
+you think the Wumpus is in. If you guess correctly while armed, you win. Otherwise you lose.
+Purple rooms randomly teleport you to another room.
