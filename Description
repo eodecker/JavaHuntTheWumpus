@@ -1,0 +1,48 @@
+Summary
+In this project, the goal was to create a Hunt the Wumpus game using a graph data structure. The game consists of a hunter character traveling through rooms (the rooms are vertices in the graph) in order to find and kill the wumpus, which is lurking in one of the rooms. The hunter has one arrow to shoot, so they need to guess the location of the wumpus wisely. If they shoot the wrong room or enter the room without shooting the wumpus, the wumpus will eat the hunter. To make the map in the game, I connected vertices and added them to my graph. For this project, I created Vertex, Graph, Hunter, Wumpus, Landscape, and HuntTheWumpus classes.
+
+ 
+
+ Solution
+
+I first created Vertex and Graph classes, which was a fairly simple process of creating a Vertex that held a Hashmap of it's neighbors (the vertices next to the Vertex and which direction they are in). The graph stores an Arraylist of the vertices. It also has a method for finding the shortest path between two vertices using Dijkstra's algorithm.
+
+ 
+
+I then created my Hunter and Wumpus classes. These two classes were very similar and I extended the Agent class in both of them. The hunter and the wumpus each store their location (which Vertex they're in) and have their own draw methods.
+
+ 
+
+Finally, I created my HuntTheWumpus class. This took most of the time. I got rid of my LandscapeDisplay class and just put all of the JFrame and JPanel controls into HuntTheWumpus. I also implemented the game logic and keyboard controls. 
+
+
+I did this for all the directions and I did separate commands for if the hunter was armed, because then instead of moving, the hunter shoots his arrow in the given direction.
+
+
+Extensions
+
+1. I made a quit button. The button exits out of the game and closes the window.
+
+2. I made each game unique because the starting locations for the hunter and the wumpus are different every time.
+
+3. I made the game more visually interesting by changing the colors of the background and the rooms.
+
+4. I created my own visual representation of the hunter and the wumpus. I did NOT just download these images from the internet. I created them on my computer and made different versions for the different appearances of the characters in the game (hunter armed and unarmed, wumpus dead and wumpus eating the hunter).
+
+5. I added a New Game button. This button resets everything and gives both the hunter and wumpus a random location so it becomes a unique game.
+
+6. I added a Teleporter to the game. The teleporter is a random room every game. When the hunter enters the Teleporter room, the hunter is randomly sent to another room in the map. Once the hunter enters the teleporter, it is shown in purple so the hunter knows where it is. Also, the teleporter prints out that the hunter was teleported so the player knows what happened.
+
+7. I added print statements to all the movement and arming commands so the user knows where they just moved and if they are armed or not.
+
+8. I also added a line of text in the java panel where the buttons are that welcomes the player to the game and then reports the outcome of the game (whether they won or lost).
+
+
+
+Conclusion
+
+In this project, I learned how to use graphs and vertices. I also got much more familiar with Java Swing and the graphics/ windows packages that we use. I also used enums for the first time and got the hang of those, which was cool. Overall, I got much more familar with coding and with Java and had a fun time with the projects this semester.
+
+ 
+
+I got help from TA's and Bruce.
